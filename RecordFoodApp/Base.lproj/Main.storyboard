@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pWJ-M8-GGs">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,216 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RecordFoodApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="180" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kHE-8V-uLE">
+                                <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="foodCell" rowHeight="180" id="Oz9-aB-c9H" customClass="FoodTableViewCell" customModule="RecordFoodApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Oz9-aB-c9H" id="Itd-U3-qAd">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="179.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="咖哩飯" translatesAutoresizingMaskIntoConstraints="NO" id="3Kp-vB-dKg">
+                                                    <rect key="frame" x="30" y="26" width="130" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="130" id="Z8N-Vt-9oj"/>
+                                                        <constraint firstAttribute="height" constant="130" id="dRh-gM-TxI"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阿娟咖喱飯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qj4-bH-zCa">
+                                                    <rect key="frame" x="168" y="26" width="102" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：台南市中西區保安路36號" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1F-Mo-fiv">
+                                                    <rect key="frame" x="168" y="115.33333333333333" width="166" height="40.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5c-oj-5H3">
+                                                    <rect key="frame" x="168" y="66.666666666666671" width="91.333333333333314" height="40.666666666666671"/>
+                                                    <string key="text">時間：
+11:00–21:00</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f5c-oj-5H3" firstAttribute="leading" secondItem="3Kp-vB-dKg" secondAttribute="trailing" constant="8" id="2Jo-vZ-b3V"/>
+                                                <constraint firstItem="Qj4-bH-zCa" firstAttribute="leading" secondItem="3Kp-vB-dKg" secondAttribute="trailing" constant="8" id="7vn-KW-pD6"/>
+                                                <constraint firstItem="Qj4-bH-zCa" firstAttribute="top" secondItem="3Kp-vB-dKg" secondAttribute="top" id="EFe-93-zBE"/>
+                                                <constraint firstItem="L1F-Mo-fiv" firstAttribute="top" secondItem="f5c-oj-5H3" secondAttribute="bottom" constant="8" id="FcV-Dh-qcd"/>
+                                                <constraint firstItem="3Kp-vB-dKg" firstAttribute="top" secondItem="Itd-U3-qAd" secondAttribute="topMargin" constant="15" id="IjG-Wg-a5f"/>
+                                                <constraint firstItem="L1F-Mo-fiv" firstAttribute="leading" secondItem="3Kp-vB-dKg" secondAttribute="trailing" constant="8" id="Inb-gS-igJ"/>
+                                                <constraint firstItem="L1F-Mo-fiv" firstAttribute="bottom" secondItem="3Kp-vB-dKg" secondAttribute="bottom" id="KSu-uR-9kG"/>
+                                                <constraint firstItem="3Kp-vB-dKg" firstAttribute="leading" secondItem="Itd-U3-qAd" secondAttribute="leadingMargin" constant="15" id="XnN-Ea-red"/>
+                                                <constraint firstAttribute="trailing" secondItem="L1F-Mo-fiv" secondAttribute="trailing" constant="8" id="Zm4-21-VwT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="L1F-Mo-fiv" id="vOT-Se-wGN"/>
+                                            <outlet property="foodImage" destination="3Kp-vB-dKg" id="wrJ-sV-1Fk"/>
+                                            <outlet property="foodNameLabel" destination="Qj4-bH-zCa" id="evK-g5-yDQ"/>
+                                            <outlet property="openLabel" destination="f5c-oj-5H3" id="oLa-tG-ckC"/>
+                                            <segue destination="0Bk-dZ-Pqj" kind="show" id="9B8-0w-55U"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="71F-Ks-9aQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="qvz-EB-wGf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iHt-t4-KPj"/>
+                    <connections>
+                        <outlet property="foodTableView" destination="kHE-8V-uLE" id="zba-bx-L8P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1079.2" y="133.00492610837438"/>
+        </scene>
+        <!--Store Table View Controller-->
+        <scene sceneID="M3C-VQ-5sO">
+            <objects>
+                <tableViewController id="0Bk-dZ-Pqj" customClass="StoreTableViewController" customModule="RecordFoodApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tdh-50-gMT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="t5A-b5-nHK">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="1350" id="Jks-Xz-NDW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jks-Xz-NDW" id="99q-fZ-iCC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WD3-n9-XnA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1350"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="阿娟招牌" translatesAutoresizingMaskIntoConstraints="NO" id="Jtl-Vb-D1m">
+                                                            <rect key="frame" x="20" y="20" width="335" height="200"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="200" id="FIT-H1-qYS"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1r-W0-KfS">
+                                                            <rect key="frame" x="20" y="270" width="335" height="243.66666666666663"/>
+                                                            <string key="text">地址：台南市中西區保安路36號
+
+電話：06-2248134；06-2209246 
+營業時間：11:00 - 21:00
+
+公休：週四
+
+推薦菜色：咖哩飯、雞肉飯、鴨肉羹
+
+FB：https://www.facebook.com/pages/阿娟咖哩飯鴨肉羹/329673023713547</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <string key="userLabel">地址：台南市中西區保安路36號 電話：06-2248134；06-2209246 營業時間：11:00 - 21:00 公休：週四 每人平均價位：50 ~ 100 可否刷卡：否 有無包廂：無 推薦菜色：咖哩飯、雞肉飯、鴨肉羹 座標（度分秒）：22°59'25.4"N 120°11'48.6"E 停車：不便（路邊停車） FB：https://www.facebook.com/pages/阿娟咖哩飯鴨肉羹/329673023713547</string>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="阿娟菜單" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-CQ-k5r">
+                                                            <rect key="frame" x="20" y="563.66666666666663" width="335" height="497.99999999999989"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="498" id="99I-K6-ywR"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="阿娟地圖" translatesAutoresizingMaskIntoConstraints="NO" id="1oB-hq-hua">
+                                                            <rect key="frame" x="20" y="1081.6666666666667" width="335" height="234"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="234" id="w4H-gM-Vff"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="C1r-W0-KfS" firstAttribute="leading" secondItem="WD3-n9-XnA" secondAttribute="leading" constant="20" id="3wh-2P-6wp"/>
+                                                        <constraint firstItem="1oB-hq-hua" firstAttribute="leading" secondItem="WD3-n9-XnA" secondAttribute="leading" constant="20" id="6NA-Oi-9c1"/>
+                                                        <constraint firstItem="C1r-W0-KfS" firstAttribute="top" secondItem="Jtl-Vb-D1m" secondAttribute="bottom" constant="50" id="6lq-WB-g5p"/>
+                                                        <constraint firstAttribute="height" constant="1350" id="AQZ-gz-CZb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="BoF-CQ-k5r" secondAttribute="trailing" constant="20" id="CW9-y4-P6D"/>
+                                                        <constraint firstItem="BoF-CQ-k5r" firstAttribute="leading" secondItem="WD3-n9-XnA" secondAttribute="leading" constant="20" id="aFC-g4-xIp"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1oB-hq-hua" secondAttribute="trailing" constant="20" id="bEt-Pr-Rld"/>
+                                                        <constraint firstItem="Jtl-Vb-D1m" firstAttribute="top" secondItem="WD3-n9-XnA" secondAttribute="top" constant="20" id="cIZ-8h-GUk"/>
+                                                        <constraint firstItem="1oB-hq-hua" firstAttribute="top" secondItem="BoF-CQ-k5r" secondAttribute="bottom" constant="20" id="dRS-Ni-OwJ"/>
+                                                        <constraint firstItem="BoF-CQ-k5r" firstAttribute="top" secondItem="C1r-W0-KfS" secondAttribute="bottom" constant="50" id="fsR-EG-Eyd"/>
+                                                        <constraint firstAttribute="trailing" secondItem="C1r-W0-KfS" secondAttribute="trailing" constant="20" id="hoD-Qv-rEq"/>
+                                                        <constraint firstItem="Jtl-Vb-D1m" firstAttribute="leading" secondItem="WD3-n9-XnA" secondAttribute="leading" constant="20" id="jYJ-4Q-gmM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Jtl-Vb-D1m" secondAttribute="trailing" constant="20" id="p2t-AI-OGV"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="WD3-n9-XnA" secondAttribute="bottom" constant="49.670000000000002" id="DwM-vE-3er"/>
+                                                <constraint firstItem="WD3-n9-XnA" firstAttribute="top" secondItem="99q-fZ-iCC" secondAttribute="top" id="NyK-cA-vjO"/>
+                                                <constraint firstItem="WD3-n9-XnA" firstAttribute="leading" secondItem="99q-fZ-iCC" secondAttribute="leading" id="THb-AC-teW"/>
+                                                <constraint firstAttribute="trailing" secondItem="WD3-n9-XnA" secondAttribute="trailing" id="rwP-tH-S7g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="0Bk-dZ-Pqj" id="5PE-y8-1GY"/>
+                            <outlet property="delegate" destination="0Bk-dZ-Pqj" id="Zfy-XC-Gny"/>
+                        </connections>
+                    </tableView>
+                    <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="informationLabel" destination="C1r-W0-KfS" id="qbq-TM-ID9"/>
+                        <outlet property="mapImage" destination="1oB-hq-hua" id="hN5-gb-pXv"/>
+                        <outlet property="menuImage" destination="BoF-CQ-k5r" id="dkv-Fb-Lmt"/>
+                        <outlet property="storeImage" destination="Jtl-Vb-D1m" id="kZI-E9-oiV"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ew-2I-s6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.2" y="165.51724137931035"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dkg-mr-o8I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pWJ-M8-GGs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HcV-zM-6ek">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rFf-Cz-5dZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWC-yg-Zk1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="咖哩飯" width="1024" height="683"/>
+        <image name="阿娟地圖" width="1206" height="842"/>
+        <image name="阿娟招牌" width="600" height="450"/>
+        <image name="阿娟菜單" width="522" height="778"/>
+    </resources>
 </document>
