@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>可以將照片加入到你的相簿嗎？</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>可以從相簿存取你的照片嗎？</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
