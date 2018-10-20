@@ -12,7 +12,7 @@ class FoodTableViewCell: UITableViewCell {
 
     @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var foodNameLabel: UILabel!
-    @IBOutlet weak var openLabel: UILabel!
+    @IBOutlet weak var introductionLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
     

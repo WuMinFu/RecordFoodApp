@@ -18,9 +18,10 @@ struct Food : Codable{
     var generalHolidays : String
     var recommended : String
     var officialWeb : String
-    var theMenu : String
+    var introduction : String
     
     static let documentsDirectory = FileManager.default.urls(for: .documentDirectory,  in: .userDomainMask).first!
+    
     //需要Codable才能轉型
     static func saveFile(food: [Food]){
         let propertyEncoder = PropertyListEncoder()

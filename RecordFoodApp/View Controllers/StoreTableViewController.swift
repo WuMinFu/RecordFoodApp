@@ -53,6 +53,9 @@ class StoreTableViewController: UITableViewController {
         delegate?.update(food:  food!)
         navigationController?.popViewController(animated:  true)
     }
+    @IBAction func keyEnd(_ sender: Any) {
+        view.endEditing(true)
+    }
     // MARK: - Table view data source
 
    
