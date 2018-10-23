@@ -1,3 +1,3 @@
 # RecordFoodApp
 Ver1.0
-![image](https://github.com/WuMinFu/RecordFoodApp/blob/master/RecordFoodTest.png)
+<img width="150" height="150" src="https://github.com/WuMinFu/RecordFoodApp/blob/master/RecordFoodTest.png"/>
