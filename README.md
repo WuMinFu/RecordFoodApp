@@ -1,3 +1,5 @@
 # RecordFoodApp
-Ver1.0
+
+##Ver1.0
+
 <img width="338" height="720" src="https://github.com/WuMinFu/RecordFoodApp/blob/master/RecordFoodTest.png"/>
